@@ -12,7 +12,7 @@ from ulauncher.api.shared.action.ExtensionCustomAction import ExtensionCustomAct
 from ulauncher.api.shared.action.RenderResultListAction import RenderResultListAction
 
 
-clipboard_managers = {m.name: m for m in [CopyQ, GPaste, Clipster, Clipman]}
+clipboard_managers = {m.name: m for m in [CopyQ, GPaste, Clipster, Clipman, Cliphist]}
 sorter = lambda m: (m.can_start(), m.is_enabled(), m.is_running())
 
 def show_status(status):

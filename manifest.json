@@ -2,7 +2,7 @@
   "manifest_version": "2",
   "required_api_version": "2",
   "name": "Clipboard",
-  "description": "Ulauncher clipboard management using GPaste, Clipster, Clipman or CopyQ",
+  "description": "Ulauncher clipboard management using GPaste, Clipster, Clipman, Cliphist or CopyQ",
   "developer_name": "Albin Larsson",
   "icon": "edit-paste.png",
   "preferences": [
