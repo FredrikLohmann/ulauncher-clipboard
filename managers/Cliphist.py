@@ -10,7 +10,7 @@ paste_agent = "wl-paste"
 copy_agent = "wl-copy"
 
 def can_start():
-    return bool(which(client)) and bool(os.environ.get("WAYLAND_DISPLAY"))
+    return bool(which(client))
 
 def is_running():
     return bool(pid_of(paste_agent))
