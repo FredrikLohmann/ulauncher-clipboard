@@ -27,7 +27,7 @@ def add(text):
     subprocess.call([copy_agent, text])
 
 def get_history():
-    val=json.loads(exec_get(client, 'show-history'))
+    val=json.loads(exec_get(client, 'list'))
     val.reverse()
     return val
 
