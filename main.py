@@ -17,7 +17,7 @@ clipboard_managers: dict[str, type[ClipboardManager]] = {
     "GPaste": gpaste.GPaste,
     "Clipster": clipster.Clipster,
     "Clipman": clipman.Clipman,
-    "Clipster": clipster.Clipster,
+    "Cliphist": cliphist.Cliphist,
 }
 
 
