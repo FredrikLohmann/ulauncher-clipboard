@@ -19,8 +19,7 @@ def is_enabled():
     return True
 
 def start():
-    return
-    #subprocess.Popen([paste_agent, '-t', 'text', "--watch", client ,'store', '-P'])
+    subprocess.Popen([paste_agent, "--watch", client ,'store'])
 
 def add(text):
     subprocess.call([copy_agent, text])
