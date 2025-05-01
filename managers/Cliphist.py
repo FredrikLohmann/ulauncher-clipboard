@@ -1,6 +1,7 @@
 import os
 import subprocess
 import json
+import re
 from shutil import which
 from lib import exec_get, pid_of, show_message
 
@@ -25,5 +26,4 @@ def add(text):
     subprocess.call([copy_agent, text])
 
 def get_history():
-    return exec_get(client, 'list').splitlines()
-
+    return [re.sub(r'^\s*\d+\s*', '', line) for line in exec_get(client, 'list').splitlines()]
