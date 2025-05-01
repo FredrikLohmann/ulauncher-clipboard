@@ -19,15 +19,13 @@ def is_enabled():
     return True
 
 def start():
-    # Open and don't wait
-    subprocess.Popen([paste_agent, '-t', 'text', "--watch", client ,'store', '-P'])
+    return
+    #subprocess.Popen([paste_agent, '-t', 'text', "--watch", client ,'store', '-P'])
 
 def add(text):
-    # manager is based on another clipboard program
     subprocess.call([copy_agent, text])
 
 def get_history():
     val=json.loads(exec_get(client, 'list'))
-    val.reverse()
     return val
 
