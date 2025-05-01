@@ -25,11 +25,12 @@ def add(text):
     subprocess.call([copy_agent, text])
 
 def get_history():
+    val=json.loads(exec_get(client, 'list'))
     show_message(
             'ulauncher-clipboard error',
-            "get history",
+            val,
             'dialog-error'
         )
-    val=json.loads(exec_get(client, 'list'))
+    
     return val
 
