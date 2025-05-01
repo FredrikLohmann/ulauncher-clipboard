@@ -25,7 +25,7 @@ def add(text):
     subprocess.call([copy_agent, text])
 
 def get_history():
-            show_message(
+    show_message(
             'ulauncher-clipboard error',
             "get history",
             'dialog-error'
