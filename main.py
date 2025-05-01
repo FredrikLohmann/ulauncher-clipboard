@@ -1,7 +1,7 @@
 import subprocess
 
 from lib import logger, try_int, ensure_status, set_clipboard, show_message
-from managers import Clipman, Clipster, CopyQ, GPaste
+from managers import Clipman, Clipster, CopyQ, GPaste, Cliphist
 
 from ulauncher.api.client.Extension import Extension
 from ulauncher.api.client.EventListener import EventListener
