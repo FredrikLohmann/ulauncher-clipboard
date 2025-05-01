@@ -23,7 +23,7 @@ def start():
     subprocess.Popen([paste_agent, "--watch", client ,'store'])
 
 def add(text):
-    subprocess.call([copy_agent, re.sub(r'(^\s*\d+\s*', '' , text)])
+    subprocess.call([copy_agent, re.sub(r'^\s*\d+\s*', '', text)])
 
 def get_history():
     return exec_get(client, 'list').splitlines()
