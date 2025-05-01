@@ -25,5 +25,5 @@ def add(text):
     subprocess.call([copy_agent, text])
 
 def get_history():
-    return exec_get(client, 'list')
+    return exec_get(client, 'list').split('\x00')
 
