@@ -18,7 +18,7 @@ Notify.init('ulauncher-clipboard-extension')
 
 
 def exec_get(*args):
-    return subprocess.check_output(list(args)).rstrip().decode('utf-8')
+    return subprocess.check_output(list(args)).rstrip().decode('utf-8', 'ignore')
 
 def try_or(function, args, fallback=None):
     try:
